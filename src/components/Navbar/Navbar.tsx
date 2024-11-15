@@ -1,6 +1,5 @@
 // Module imports -------------------------------
 
-import { Link } from "react-router-dom"
 import Navlink from "../Navlink/Navlink";
 
 // ----------------------------------------------
