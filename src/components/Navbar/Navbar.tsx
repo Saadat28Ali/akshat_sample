@@ -26,18 +26,27 @@ export default function Navbar(
         shadow-[0px_0px_20px_2px_rgba(0,0,0,0.5)]
 
         flex
-        justify-between
+        justify-center
 
         "
         >
-            {
-                links.map((linkItem: NavLinkInter, index: number) => {
-                    return (
-                        // <Link key={index} to={linkItem.path} > {linkItem.text} </Link>
-                        <Navlink key={index.toString()} path={linkItem.path} text={linkItem.text} />
-                    );
-                })
-            }
+            <section
+            className="
+            Navbar_NavlinksSection
+
+            flex
+            flex-row
+            ">
+                {
+                    links.map((linkItem: NavLinkInter, index: number) => {
+                        return (
+                            // <Link key={index} to={linkItem.path} > {linkItem.text} </Link>
+                            <Navlink key={index.toString()} path={linkItem.path} text={linkItem.text} />
+                        );
+                    })
+                }
+            </section>
+
         </nav>
     )
 }
