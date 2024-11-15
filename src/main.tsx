@@ -15,12 +15,17 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.tsx'
 
+// Loader imports -------------------------------
+
+import { blogPostsLoader } from './loaders/blogPostsLoader.ts';
+
 // Page imports ---------------------------------
 
 import HomePage from './routes/HomePage.tsx';
-import RootPage from './routes/Root.tsx';
-import AboutPage from './routes/About.tsx';
-import Contact from './routes/Contact.tsx';
+import RootPage from './routes/RootPage.tsx';
+import AboutPage from './routes/AboutPage.tsx';
+import ContactPage from './routes/ContactPage.tsx';
+import BlogPage from "./routes/BlogPage.tsx";
 
 // ----------------------------------------------
 
@@ -36,6 +41,10 @@ const navlinks = [
   {
     text: "Contact",
     path: "/contact"
+  }, 
+  {
+    text: "Blog", 
+    path: "/blog", 
   }
 ];
 
@@ -58,7 +67,12 @@ const defaultBrowserRouter = createBrowserRouter([
       }, 
       {
         path: "/contact", 
-        element: <Contact />
+        element: <ContactPage />
+      }, 
+      {
+        path: "/blog", 
+        element: <BlogPage />, 
+        loader: blogPostsLoader
       }
       
     ]

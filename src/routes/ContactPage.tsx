@@ -1,8 +1,8 @@
-export default function Contact() {
+export default function ContactPage() {
     return (
         <article
         className="
-        Contact
+        ContactPage
 
         w-[100%]
 

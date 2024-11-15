@@ -10,7 +10,7 @@ import SmallIntro from "../components/SmallIntro/SmallIntro";
 
 export default function HomePage() {
     return (
-        <div>
+        <div className="HomePage">
             <Hero />
             <SmallIntro />
             <OurServices />
