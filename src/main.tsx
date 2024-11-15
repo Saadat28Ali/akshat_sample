@@ -1,7 +1,7 @@
 // React imports --------------------------------
 
-import { FunctionComponent, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react';
 
 // Asset imports --------------------------------
 
@@ -9,7 +9,7 @@ import './index.css'
 
 // Module imports -------------------------------
 
-import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Component imports ----------------------------
 
